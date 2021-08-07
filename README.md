@@ -1,6 +1,7 @@
 # learnqml
 
-* 课程地址：http://i.xue.taobao.com/detail.htm?courseId=113958
+* 免费试看地址：https://jiaoyu.taobao.com/course/QKT_2081022
+* 完整视频购买地址：https://item.taobao.com/item.htm?id=638455394732
 * 代码地址：https://github.com/softmarch/learnqml
 
 ## 第一章：基础介绍
