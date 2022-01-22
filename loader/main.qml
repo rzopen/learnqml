@@ -9,6 +9,8 @@ ApplicationWindow {
     height: 480
     title: qsTr("Tabs")
 
+    property QtObject logo: null
+
     Rectangle {
         width: 100
         height: 24
@@ -22,6 +24,28 @@ ApplicationWindow {
                 color:"red"
                 opacity: 0.3
             }
+        }
+    }
+
+    Button {
+        x: 200
+        text: "A"
+        onClicked: {
+            if (logo == null) {
+                logo = loadLogo()
+            } else {
+                logo.destroy()
+            }
+        }
+    }
+
+    function loadLogo() {
+        var component = Qt.createComponent("Page1.qml");
+        if (component.status === Component.Ready) {
+            var button = component.createObject(window);
+            //button.y = 0;
+            //button.color = "red";
+            return button;
         }
     }
 }
